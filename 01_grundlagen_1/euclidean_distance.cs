@@ -1,8 +1,8 @@
 using System;
 
-namespace EuclideanDistance
+namespace ExerciseSolution
 {
-    class OwnClass
+    class Program
     {
         public static void Main()
         {
