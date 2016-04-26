@@ -1,11 +1,11 @@
-# Lesson 1
+# Lesson 2
 
-### 1. Hello World
-[Source](./hello_world.cs) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/00_hello_world.html)
+### 1. Polygon area - 1
+[Source](./polygon_area_1.cs) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/02_polygon_area_1.html)
 
-This is the default 'Hello World' Script to get in touch with C#.
+Calculate the area of a polygon with hard coded values.
 
-### 2. Euclidean Distance
-[Source](./euclidean_distance.cs) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/01_calculate_euclidean_distance.html)
+### 2. Polygon area - 1
+[Source](./polygon_area_2.cs) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/02_polygon_area_2.html)
 
-Get in touch with datatyps and operations in C#.
+Calculate the area of a polygon with user input.
