@@ -6,37 +6,34 @@ namespace ExerciseSolution
     {
         public static void Main()
         {
+            // Read the number of vertices of the polygon.
+            Console.WriteLine("How many vertices:");
+            string vertexCountString = Console.ReadLine();
+            int vertexCount = int.Parse(vertexCountString);
+
+            // Only continue if there are more than 2 vertices.
+            while(vertexCount < 3)
+            {
+                Console.WriteLine("There are not enough vertex. Please enter a new number:");
+                vertexCountString = Console.ReadLine();
+                vertexCount = int.Parse(vertexCountString);
+            }
+
             // The arrays of the values.
-            int[] xValues = new int[100];
-            int[] yValues = new int[100];
-            int vertexCount = 0;
+            int[] xValues = new int[vertexCount];
+            int[] yValues = new int[vertexCount];
 
-            Console.WriteLine("Your input:");
+            Console.WriteLine("Your vertex input:");
 
-            bool continueInput = true;
             char[] splitChar = { ':' };
-            while(continueInput)
+            for(int c = 0; c < vertexCount; c++)
             {
                 // Get the new input and look if it is a correct input.
                 string inputString = Console.ReadLine();
-                if(inputString == "")
-                {
-                    if(vertexCount >= 3)
-                    {
-                        Console.WriteLine("You ended the input.");
-                        continueInput = false;
-                    }
-                    else
-                        Console.WriteLine("There are too less input vertices. Please input more.");
-                }
-                else
-                {
-                    // Split the string in x and y value and convert them.
-                    string[] inputValues = inputString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-                    xValues[vertexCount] = int.Parse(inputValues[0]);
-                    yValues[vertexCount] = int.Parse(inputValues[1]);
-                    vertexCount++;
-                }
+                // Split the string in x and y value and convert them.
+                string[] inputValues = inputString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
+                xValues[c] = int.Parse(inputValues[0]);
+                yValues[c] = int.Parse(inputValues[1]);
             }
 
             // Get the area from the method.

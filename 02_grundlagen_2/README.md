@@ -5,7 +5,7 @@
 
 Calculate the area of a polygon with hard coded values.
 
-### 2. Polygon area - 1
+### 2. Polygon area - 2
 [Source](./polygon_area_2.cs) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/03_calculate_polygon_area_2.html)
 
 Calculate the area of a polygon with user input.

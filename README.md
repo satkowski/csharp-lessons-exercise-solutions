@@ -13,3 +13,6 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 #### Lesson 2:
 1. [Polygon Area - 1](02_grundlagen_2/polygon_area_1.cs)
 2. [Polygon Area - 2](02_grundlagen_2/polygon_area_2.cs)
+
+#### Lesson 3:
+1. [Class for Polygon and Point](03_objektorientierung/04_polygon_point_class/)
