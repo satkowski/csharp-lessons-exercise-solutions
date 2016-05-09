@@ -15,4 +15,7 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 2. [Polygon Area - 2](02_grundlagen_2/polygon_area_2.cs)
 
 #### Lesson 3:
-1. [Class for Polygon and Point](03_objektorientierung/04_polygon_point_class/)
+1. [Class for Polygon and Point](03_objektorientierung/01_polygon_point_class/)
+
+#### Lesson 4:
+1. [Abstract Shape class and derivations](04_vererbung_und_polymorphie/01_abstract_shapes/)
