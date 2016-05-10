@@ -19,3 +19,7 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 
 #### Lesson 4:
 1. [Abstract Shape class and derivations](04_vererbung_und_polymorphie/01_abstract_shapes/)
+
+### Lesson 5:
+1. [Static for Shapes](05_null_exceptions_schluesselwoerter/01_static_for_shapes/)
+2. [Exceptions for Shapes](05_null_exceptions_schluesselwoerter/02_exception_for_shapes)
