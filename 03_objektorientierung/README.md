@@ -6,6 +6,6 @@
 Takes the solutions of the last exercises and pack them in classes.
 
 ### 2. (B02) Book, Library and User
-[Source](./B01_book_library_user/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B01_book_library_user.html)
+[Source](./B02_book_library_user/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B02_book_library_user.html)
 
 Creates a few classes for the library complex.
