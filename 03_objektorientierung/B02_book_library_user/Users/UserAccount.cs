@@ -1,9 +1,4 @@
 ﻿using ExerciseSolution.Media;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExerciseSolution.Users
 {
@@ -15,7 +10,7 @@ namespace ExerciseSolution.Users
         /// <summary>
         /// All books that this user borrowed.
         /// </summary>
-        private Book[] borrowedBooks;
+        private Medium[] borrowedMedia;
 
         /// <summary>
         /// The name of the user.
@@ -42,7 +37,7 @@ namespace ExerciseSolution.Users
         /// <param name="id">the id of this account</param>
         public UserAccount(string name, string email, long id)
         {
-            borrowedBooks = new Book[5];
+            borrowedMedia = new Book[5];
             Name = name;
             EMail = email;
             ID = id;
