@@ -25,6 +25,11 @@ namespace ExerciseSolution
         }
 
 
+        /// <summary>
+        /// Searches in the stock of this library for matching media.
+        /// </summary>
+        /// <param name="searchQuery">the search query.</param>
+        /// <returns>the array of all found media. Empty if no media was found.</returns>
         public Medium[] Search(string searchQuery)
         {
             // Only search if the search query hast more than 2 characters.
