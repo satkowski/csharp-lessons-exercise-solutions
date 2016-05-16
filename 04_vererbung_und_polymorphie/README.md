@@ -4,3 +4,8 @@
 [Source](./A05_abstract_shapes/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A05_abstract_shapes.html)
 
 Takes the solutions of the fourth exercise and extend it with an abstract Shape class.
+
+### 2. (B03) Abstract Media class and derivation
+[Source](./B03_abstract_media/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B03_abstract_media.html)
+
+Takes the solutions of the third exercise and extend it with an abstract Media class.

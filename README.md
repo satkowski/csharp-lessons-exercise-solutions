@@ -21,6 +21,7 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 
 #### Lesson 4:
 1. [A05 - Abstract Shape class and derivations](04_vererbung_und_polymorphie/A05_abstract_shapes/)
+2. [B03 - Abstract Media class and derivation](04_vererbung_und_polymorphie/B03_abstract_media/)
 
 ### Lesson 5:
 1. [A06 - Static for Shapes](05_null_exceptions_schluesselwoerter/A06_static_for_shapes/)
