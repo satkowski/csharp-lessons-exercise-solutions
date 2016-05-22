@@ -8,7 +8,7 @@ namespace ExerciseSolution.Users
     public class UserAccount
     {
         /// <summary>
-        /// All books that this user borrowed.
+        /// All media that this user borrowed.
         /// </summary>
         private Medium[] borrowedMedia;
 

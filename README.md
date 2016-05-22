@@ -7,13 +7,13 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 
 # Solutions:
 #### Lesson 1:
-1. [Hello World](01_grundlagen_1/hello_world.cs)
-2. [A01 - Euclidean distance](01_grundlagen_1/a01_euclidean_distance.cs)
+1. [Hello World](01_grundlagen_1/hello_world/)
+2. [A01 - Euclidean distance](01_grundlagen_1/a01_euclidean_distance/)
 
 #### Lesson 2:
-1. [A02 - Polygon Area calculation](02_grundlagen_2/a02_polygon_area_1.cs)
-2. [A03 - Polygon Area with user input](02_grundlagen_2/a03_polygon_area_2.cs)
-3. [B01 - Search title](02_grundlagen_2/b01_search_title.cs)
+1. [A02 - Polygon Area calculation](02_grundlagen_2/a02_polygon_area_1/)
+2. [A03 - Polygon Area with user input](02_grundlagen_2/a03_polygon_area_2/)
+3. [B01 - Search title](02_grundlagen_2/b01_search_title/)
 
 #### Lesson 3:
 1. [A04 - Class for Polygon and Point](03_objektorientierung/A04_polygon_point_class/)
