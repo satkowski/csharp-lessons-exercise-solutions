@@ -1,5 +1,4 @@
-﻿using ExerciseSolution.Users;
-
+﻿
 namespace ExerciseSolution.Media
 {
     /// <summary>
@@ -7,11 +6,6 @@ namespace ExerciseSolution.Media
     /// </summary>
     public class Book
     {
-        /// <summary>
-        /// The user that has borrowed this book.
-        /// </summary>
-        private UserAccount borrowedTo;
-
         /// <summary>
         /// The Title of this book.
         /// </summary>

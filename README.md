@@ -17,7 +17,7 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 
 #### Lesson 3:
 1. [A04 - Class for Polygon and Point](03_objektorientierung/A04_polygon_point_class/ExerciseSolution/)
-2. [B02 - Book, Library and User](03_objektorientierung/B02_book_library_user/ExerciseSolution/)
+2. [B02 - Book and Library](03_objektorientierung/B02_book_library/ExerciseSolution/)
 
 #### Lesson 4:
 1. [A05 - Abstract Shape class and derivations](04_vererbung_und_polymorphie/A05_abstract_shapes/ExerciseSolution/)

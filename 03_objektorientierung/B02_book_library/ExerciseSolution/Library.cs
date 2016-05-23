@@ -1,18 +1,17 @@
 ﻿using ExerciseSolution.Media;
-using ExerciseSolution.Users;
 
 namespace ExerciseSolution
 {
     public class Library
     {
         /// <summary>
-        /// All useraccount that this library has.
-        /// </summary>
-        private UserAccount[] users;
-        /// <summary>
         /// All books that this library manages.
         /// </summary>
         private Book[] books;
+        /// <summary>
+        /// The number of that were already added to the stock of this library.
+        /// </summary>
+        private int bookCount;
 
 
         /// <summary>
@@ -20,7 +19,7 @@ namespace ExerciseSolution
         /// </summary>
         public Library()
         {
-            users = new UserAccount[100];
+            bookCount = 0;
             books = new Book[500];
         }
 
@@ -49,6 +48,16 @@ namespace ExerciseSolution
                 outputBooks[i] = tempBooks[i];
 
             return outputBooks;
+        }
+
+        /// <summary>
+        /// Add a new book to the stock of the library.
+        /// </summary>
+        /// <param name="book"></param>
+        public void AddNewBook(Book book)
+        {
+            books[bookCount] = book;
+            bookCount++;
         }
     }
 }
