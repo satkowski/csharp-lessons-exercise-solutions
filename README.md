@@ -18,11 +18,12 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 #### Lesson 3:
 1. [A04 - Class for Polygon and Point](03_objektorientierung/A04_polygon_point_class/ExerciseSolution/)
 2. [B02 - Book and Library](03_objektorientierung/B02_book_library/ExerciseSolution/)
+3. [B03 - A User for the Library](03_objektorientierung/B03_user/ExerciseSolution/)
 
 #### Lesson 4:
 1. [A05 - Abstract Shape class and derivations](04_vererbung_und_polymorphie/A05_abstract_shapes/ExerciseSolution/)
-2. [B03 - Abstract Media class and derivation](04_vererbung_und_polymorphie/B03_abstract_media/ExerciseSolution/)
-3. [B04 - Fee calculation with DateTime](04_vererbung_und_polymorphie/B04_fee_calculation/ExerciseSolution/)
+2. [B04 - Abstract Media class and derivation](04_vererbung_und_polymorphie/B04_abstract_media/ExerciseSolution/)
+3. [B05 - Fee calculation with DateTime](04_vererbung_und_polymorphie/B05_fee_calculation/ExerciseSolution/)
 
 ### Lesson 5:
 1. [A06 - Static for Shapes](05_null_exceptions_schluesselwoerter/A06_static_for_shapes/ExerciseSolution/)
