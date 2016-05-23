@@ -38,10 +38,13 @@ namespace ExerciseSolution
             // Create a temporary books array to save all found books. We need a counter to do that.
             Book[] tempBooks = new Book[500];
             int tempBooksCounter = 0;
-            for(int i = 0; i < books.Length; i++)
-                if(books[i].Search(searchQuery))
+            for (int i = 0; i < books.Length; i++)
+            {
+                if (books[i] == null)
+                    continue;
+                if (books[i].Search(searchQuery))
                     tempBooks[tempBooksCounter++] = books[i];
-
+            }
             // Create a new array that is only as big as the number of results. Copy all results in it.
             Book[] outputBooks = new Book[tempBooksCounter];
             for(int i = 0; i < tempBooksCounter; i++)
