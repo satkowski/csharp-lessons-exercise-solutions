@@ -36,7 +36,7 @@ namespace ExerciseSolution.Media
             : base(title, period, feePerDay)
         {
             ISSN = issn;
-            Issuing = Issuing;
+            this.Issuing = issuing;
             Year = year;
         }
 

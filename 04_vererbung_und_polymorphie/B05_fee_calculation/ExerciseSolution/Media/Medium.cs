@@ -46,7 +46,7 @@ namespace ExerciseSolution.Media
             Title = title;
             Period = period;
             FeePerDay = feePerDay;
-            ReturnDate = DateTime.Now;
+            ReturnDate = DateTime.Now.AddDays(Period);
         }
 
 
@@ -70,14 +70,14 @@ namespace ExerciseSolution.Media
         {
             DateTime yet = DateTime.Now;
             // Today is earlier or on the same day as ReturnDate.
-            if(ReturnDate.CompareTo(yet) <= 0)
+            if(ReturnDate.CompareTo(yet) >= 0)
                 return 0;
             // The difference in internal time save property (it represend 100 nano seconds).
             long ticksDifference = yet.Ticks - ReturnDate.Ticks;
             DateTime timeDifference = new DateTime(ticksDifference);
 
             // Calculate the total fee to pay.
-            return FeePerDay * (timeDifference.Day + 1);
+            return FeePerDay * (timeDifference.Day - 1);
         }
     }
 }
