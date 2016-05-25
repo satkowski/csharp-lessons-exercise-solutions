@@ -33,9 +33,9 @@ namespace ExerciseSolution.Media
         public Magazine(string title, string issn, int issuing, int year) 
             : base(title)
         {
-            ISSN = issn;
-            Issuing = Issuing;
-            Year = year;
+            this.ISSN = issn;
+            this.Issuing = issuing;
+            this.Year = year;
         }
 
 

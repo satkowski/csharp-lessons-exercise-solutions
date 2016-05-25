@@ -37,7 +37,7 @@ namespace ExerciseSolution.Users
         /// <param name="id">the id of this account</param>
         public UserAccount(string name, string email, long id)
         {
-            borrowedMedia = new Book[5];
+            borrowedMedia = new Medium[5];
             Name = name;
             EMail = email;
             ID = id;
