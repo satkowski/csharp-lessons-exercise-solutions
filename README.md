@@ -28,3 +28,6 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 ### Lesson 5:
 1. [A06 - Static for Shapes](05_null_exceptions_schluesselwoerter/A06_static_for_shapes/ExerciseSolution/)
 2. [A07 - Exceptions for Shapes](05_null_exceptions_schluesselwoerter/A07_exception_for_shapes/ExerciseSolution/)
+
+### Lesson 6:
+1. [A08 - Lists for Shapes](06_datenstrukturen/A08_lists_for_shapes/ExerciseSolution/)
