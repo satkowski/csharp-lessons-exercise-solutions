@@ -8,11 +8,11 @@ namespace ExerciseSolution
         /// <summary>
         /// All books that this library manages.
         /// </summary>
-        private Medium[] medien;
+        private Medium[] media;
         /// <summary>
         /// The number of that were already added to the stock of this library.
         /// </summary>
-        private int medienCount;
+        private int mediumCount;
         /// <summary>
         /// All useraccount that this library has.
         /// </summary>
@@ -28,8 +28,8 @@ namespace ExerciseSolution
         /// </summary>
         public Library()
         {
-            medienCount = 0;
-            medien = new Medium[500];
+            mediumCount = 0;
+            media = new Medium[500];
             userCount = 0;
             users = new UserAccount[100];
         }
@@ -43,25 +43,25 @@ namespace ExerciseSolution
         public Medium[] Search(string searchQuery)
         {
             // Only search if the search query hast more than 2 characters.
-            if (searchQuery.Length < 3)
+            if(searchQuery.Length < 3)
                 return new Medium[0];
 
             // Create a temporary books array to save all found books. We need a counter to do that.
-            Medium[] tempMedien = new Medium[500];
-            int tempMedienCounter = 0;
-            for (int i = 0; i < medien.Length; i++)
+            Medium[] tempMedia = new Medium[500];
+            int tempMediumCounter = 0;
+            for(int i = 0; i < media.Length; i++)
             {
-                if (medien[i] == null)
+                if(media[i] == null)
                     continue;
-                if (medien[i].Search(searchQuery))
-                    tempMedien[tempMedienCounter++] = medien[i];
+                if(media[i].Search(searchQuery))
+                    tempMedia[tempMediumCounter++] = media[i];
             }
             // Create a new array that is only as big as the number of results. Copy all results in it.
-            Medium[] outputMedien = new Medium[tempMedienCounter];
-            for (int i = 0; i < tempMedienCounter; i++)
-                outputMedien[i] = tempMedien[i];
+            Medium[] outputMedia = new Medium[tempMediumCounter];
+            for(int i = 0; i < tempMediumCounter; i++)
+                outputMedia[i] = tempMedia[i];
 
-            return outputMedien;
+            return outputMedia;
         }
 
         /// <summary>
@@ -70,8 +70,8 @@ namespace ExerciseSolution
         /// <param name="book"></param>
         public void AddNewMedium(Medium m)
         {
-            medien[medienCount] = m;
-            medienCount++;
+            media[mediumCount] = m;
+            mediumCount++;
         }
 
         /// <summary>
