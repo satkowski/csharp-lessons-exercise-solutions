@@ -31,3 +31,4 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 
 ### Lesson 6:
 1. [A08 - Lists for Shapes](06_datenstrukturen/A08_lists_for_shapes/ExerciseSolution/)
+2. [B06 - Collections for Media](06_datenstrukturen/B06_collections_for_media/ExerciseSolution/)
