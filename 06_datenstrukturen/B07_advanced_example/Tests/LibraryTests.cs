@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ExerciseSolution;
 using ExerciseSolution.Media;
+using ExerciseSolution.Users;
 
 namespace Tests
 {
@@ -42,6 +43,16 @@ namespace Tests
         {
             //TODO: Change exercise to make it more test-friendly
             SuT.RegisterUser("Foo", "Bar@Foo.org");
+        }
+
+        [TestMethod]
+        public void AuthentificateUserShallWorkProperly()
+        {
+            Assert.IsNull(SuT.Authentificate(0));
+            SuT.RegisterUser("Hans", "Hans@test.org");
+            UserAccount ua = SuT.Authentificate(0);
+            Assert.IsNotNull(ua);
+            Assert.IsNull(SuT.Authentificate(1));
         }
 
         [TestInitialize]

@@ -77,5 +77,17 @@ namespace ExerciseSolution
             users.Add(userCount, user);
             userCount++;
         }
+
+        /// <summary>
+        /// Authentificate the User on the basis of an id
+        /// </summary>
+        /// <param name="id">The id of the desired UserAccount</param>
+        /// <returns>The UserAccount for this id, or null if there is none</returns>
+        public UserAccount Authentificate(long id)
+        {
+            UserAccount value;
+            users.TryGetValue(id,out value);
+            return value;
+        }
     }
 }
