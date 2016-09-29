@@ -38,12 +38,15 @@ namespace ExerciseSolution
 
         static string SearchFirstTitle(string[] titles, string searchQuery)
         {
+            int count = 0;
             // Iterate through all avaible titles.
-            for(int c = 0; c < titles.Length; c++)
+            while(count < titles.Length)
             {
                 // If the title contains the search query return the given title.
-                if(titles[c].Contains(searchQuery))
-                    return titles[c];
+                if(titles[count].Contains(searchQuery))
+                    return titles[count];
+
+                count++;
             }
             // If no title was found return the emtpy string.
             return "";
