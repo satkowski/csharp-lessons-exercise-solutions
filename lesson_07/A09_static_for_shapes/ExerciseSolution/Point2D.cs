@@ -57,7 +57,7 @@ namespace ExerciseSolution
         /// <returns>the created Point2D</returns>
         public static Point2D CreatePoint(string pointString)
         {
-            char[] splitChar = { ':', '-' };
+            char[] splitChar = { '-' };
             string[] coordinateValues = pointString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
 
             Point2D newPoint;
@@ -72,5 +72,6 @@ namespace ExerciseSolution
 
             return newPoint;
         }
+
     }
 }

@@ -21,22 +21,33 @@ namespace ExerciseSolution
 
         public static Polygon CreatePolygon()
         {
-            // Read the number of vertices of the polygon.
-            Console.WriteLine("How many vertices:");
-            string vertexCountString = Console.ReadLine();
-            int vertexCount = int.Parse(vertexCountString);
-
-            // Only continue if there are more than 2 vertices.
-            while(vertexCount < 3)
+            int vertexCount = 0;
+            // Only continue if the right input was taken.
+            bool inputFinished = false;
+            while(!inputFinished)
             {
-                Console.WriteLine("There are not enough vertex. Please enter a new number:");
-                vertexCountString = Console.ReadLine();
-                vertexCount = int.Parse(vertexCountString);
+                // Read the number of vertices of the polygon.
+                Console.WriteLine("How many vertices:");
+                string vertexCountString = Console.ReadLine();
+                // Try if the parsing works.
+                try
+                {
+                    vertexCount = int.Parse(vertexCountString);
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Your input wasn't a number.");
+                    continue;
+                }
+                // Look if the count is to low.
+                if(vertexCount < 3)
+                    Console.WriteLine("The vertex count is too low (need to be greater than 2).");
+                else
+                    inputFinished = true;
             }
 
             // The arrays of the points.
             Point2D[] vertices = new Point2D[vertexCount];
-
             Console.WriteLine("Your vertex input:");
 
             char[] splitChar = { '-' };
@@ -46,25 +57,45 @@ namespace ExerciseSolution
                 string inputString = Console.ReadLine();
                 // Split the string in x and y value and convert them.
                 string[] inputValues = inputString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-                vertices[c] = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
+                try
+                {
+                    vertices[c] = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Your input wasn't correct. Please re-enter:");
+                    c--;
+                }
             }
-
             return new Polygon(vertices, new Point2D());
         }
 
         public static Circle CreateCircle()
         {
-            Console.WriteLine("What is the radius of the circle:");
-            string circleRadius = Console.ReadLine();
-            int radius = int.Parse(circleRadius);
-
-            while(radius <= 0)
+            int radius = 0;
+            // Only continue if the right input was taken.
+            bool inputFinished = false;
+            while(!inputFinished)
             {
-                Console.WriteLine("The rdius isn't allowed to be less or equal 0. Please enter a new number:");
-                circleRadius = Console.ReadLine();
-                radius = int.Parse(circleRadius);
+                // Read the radius.
+                Console.WriteLine("What is the radius of the circle:");
+                string circleRadius = Console.ReadLine();
+                // Try if the parsing works.
+                try
+                {
+                    radius = int.Parse(circleRadius);
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Your input wasn't a number.");
+                    continue;
+                }
+                // Look if the radius is correct.
+                if(radius <= 0)
+                    Console.WriteLine("The radius isn't allowed to be less or equal 0.");
+                else
+                    inputFinished = true;
             }
-
             return new Circle(radius, new Point2D());
         }
     }
