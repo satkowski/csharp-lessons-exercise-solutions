@@ -13,6 +13,9 @@ namespace ExerciseSolution
             double distance = poly.Vertices[0].calculateEuclideanDistanceTo(poly.Vertices[2]);
             Console.WriteLine("The distance between the first and the third point is " + distance + ".");
 
+            Circle circle = CreateCircle();
+            Console.WriteLine("The area of this circle is " + circle.Area + ".");
+
             Console.ReadLine();
         }
 
@@ -46,7 +49,23 @@ namespace ExerciseSolution
                 vertices[c] = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
             }
 
-            return new Polygon(vertices);
+            return new Polygon(vertices, new Point2D());
+        }
+
+        public static Circle CreateCircle()
+        {
+            Console.WriteLine("What is the radius of the circle:");
+            string circleRadius = Console.ReadLine();
+            int radius = int.Parse(circleRadius);
+
+            while(radius <= 0)
+            {
+                Console.WriteLine("The rdius isn't allowed to be less or equal 0. Please enter a new number:");
+                circleRadius = Console.ReadLine();
+                radius = int.Parse(circleRadius);
+            }
+
+            return new Circle(radius, new Point2D());
         }
     }
 }

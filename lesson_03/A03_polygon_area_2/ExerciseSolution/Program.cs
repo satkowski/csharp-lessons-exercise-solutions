@@ -6,18 +6,6 @@ namespace ExerciseSolution
     {
         public static void Main()
         {
-            // Get a polygon from the method.
-            Polygon poly = CreatePolygon();
-            Console.WriteLine("The area of this polygon is " + poly.Area + ".");
-
-            double distance = poly.Vertices[0].calculateEuclideanDistanceTo(poly.Vertices[2]);
-            Console.WriteLine("The distance between the first and the third point is " + distance + ".");
-
-            Console.ReadLine();
-        }
-
-        public static Polygon CreatePolygon()
-        {
             // Read the number of vertices of the polygon.
             Console.WriteLine("How many vertices:");
             string vertexCountString = Console.ReadLine();
@@ -31,8 +19,9 @@ namespace ExerciseSolution
                 vertexCount = int.Parse(vertexCountString);
             }
 
-            // The arrays of the points.
-            Point2D[] vertices = new Point2D[vertexCount];
+            // The arrays of the values.
+            int[] xValues = new int[vertexCount];
+            int[] yValues = new int[vertexCount];
 
             Console.WriteLine("Your vertex input:");
 
@@ -43,10 +32,33 @@ namespace ExerciseSolution
                 string inputString = Console.ReadLine();
                 // Split the string in x and y value and convert them.
                 string[] inputValues = inputString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-                vertices[c] = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
+                xValues[c] = int.Parse(inputValues[0]);
+                yValues[c] = int.Parse(inputValues[1]);
             }
 
-            return new Polygon(vertices);
+            // Get the area from the method.
+            float solution = calcPolygonArea(xValues, yValues);
+
+            Console.WriteLine("The area of this polygon is " + solution + ".");
+
+            Console.ReadLine();
+        }
+
+        private static float calcPolygonArea(int[] xValues, int[] yValues)
+        {
+            float area = 0;
+            // Go through all vertices and calculate the area.
+            for(int c = 0; c < xValues.Length; c++)
+            {
+                // Add all point pairs.
+                if(c < xValues.Length - 1)
+                    area += (xValues[c] - xValues[c + 1]) * (yValues[c] + yValues[c + 1]);
+                // Don't forget the last pair (last and first point).
+                else
+                    area += (xValues[c] - xValues[0]) * (yValues[c] + yValues[0]);
+            }
+            // Take the absolute half value.
+            return Math.Abs(area / 2);
         }
     }
 }

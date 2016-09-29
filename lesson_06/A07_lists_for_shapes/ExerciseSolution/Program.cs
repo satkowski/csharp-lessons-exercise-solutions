@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExerciseSolution
 {
@@ -12,6 +13,9 @@ namespace ExerciseSolution
 
             double distance = poly.Vertices[0].calculateEuclideanDistanceTo(poly.Vertices[2]);
             Console.WriteLine("The distance between the first and the third point is " + distance + ".");
+
+            Circle circle = CreateCircle();
+            Console.WriteLine("The area of this circle is " + circle.Area + ".");
 
             Console.ReadLine();
         }
@@ -32,7 +36,7 @@ namespace ExerciseSolution
             }
 
             // The arrays of the points.
-            Point2D[] vertices = new Point2D[vertexCount];
+            List<Point2D> vertices = new List<Point2D>();
 
             Console.WriteLine("Your vertex input:");
 
@@ -43,10 +47,27 @@ namespace ExerciseSolution
                 string inputString = Console.ReadLine();
                 // Split the string in x and y value and convert them.
                 string[] inputValues = inputString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-                vertices[c] = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
+                Point2D newPoint = new Point2D(int.Parse(inputValues[0]), int.Parse(inputValues[1]));
+                vertices.Add(newPoint);
             }
 
-            return new Polygon(vertices);
+            return new Polygon(vertices, new Point2D());
+        }
+
+        public static Circle CreateCircle()
+        {
+            Console.WriteLine("What is the radius of the circle:");
+            string circleRadius = Console.ReadLine();
+            int radius = int.Parse(circleRadius);
+
+            while(radius <= 0)
+            {
+                Console.WriteLine("The rdius isn't allowed to be less or equal 0. Please enter a new number:");
+                circleRadius = Console.ReadLine();
+                radius = int.Parse(circleRadius);
+            }
+
+            return new Circle(radius, new Point2D());
         }
     }
 }
