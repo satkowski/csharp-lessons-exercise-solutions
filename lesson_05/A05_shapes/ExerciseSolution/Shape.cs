@@ -1,7 +1,10 @@
 ﻿
 namespace ExerciseSolution
 {
-    public abstract class Shape
+    /// <summary>
+    /// Represent all possible shapes.
+    /// </summary>
+    public class Shape
     {
         /// <summary>
         /// The position of this shape on the 2D plane.
@@ -30,6 +33,9 @@ namespace ExerciseSolution
         /// Calculates the area of this shape.
         /// </summary>
         /// <returns>the area</returns>
-        protected abstract float calculateArea();
+        protected virtual float calculateArea()
+        {
+            return -1;
+        }
     }
 }

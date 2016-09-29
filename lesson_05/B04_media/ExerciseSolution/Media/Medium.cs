@@ -3,9 +3,9 @@
 namespace ExerciseSolution.Media
 {
     /// <summary>
-    /// Abstract. Represent all kind of media.
+    /// Represent all kind of media.
     /// </summary>
-    public abstract class Medium
+    public class Medium
     {
         /// <summary>
         /// The user that has borrowed this book.

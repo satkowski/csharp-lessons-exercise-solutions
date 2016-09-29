@@ -39,7 +39,7 @@ namespace ExerciseSolution
 
             Console.WriteLine("Your vertex input:");
 
-            char[] splitChar = { ':' };
+            char[] splitChar = { '-' };
             for(int c = 0; c < vertexCount; c++)
             {
                 // Get the new input and look if it is a correct input.

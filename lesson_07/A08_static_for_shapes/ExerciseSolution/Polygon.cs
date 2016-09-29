@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExerciseSolution
 {
@@ -10,7 +11,7 @@ namespace ExerciseSolution
         /// <summary>
         /// The listing of all vertex that this polygon owns.
         /// </summary>
-        public Point2D[] Vertices
+        public List<Point2D> Vertices
         {
             get { return vertices; }
             set
@@ -19,14 +20,14 @@ namespace ExerciseSolution
                 Area = calculateArea();
             }
         }
-        private Point2D[] vertices;
+        private List<Point2D> vertices;
 
         /// <summary>
         /// The count of the vertices.
         /// </summary>
         public int VertexCount
         {
-            get { return Vertices.Length; }
+            get { return Vertices.Count; }
         }
 
         /// <summary>
@@ -34,17 +35,17 @@ namespace ExerciseSolution
         /// </summary>
         /// <param name="vertexCount">the number of vertices</param>
         /// <param name="position">the position of this shape</param>
-        public Polygon(int vertexCount, Point2D position)
+        public Polygon(Point2D position)
             : base(position)
         {
-            vertices = new Point2D[vertexCount];
+            vertices = new List<Point2D>();
         }
 
         /// <summary>
         /// Constructor. Creates a polygon with the given array of vertices.
         /// </summary>
         /// <param name="vertices">the vertices</param>
-        public Polygon(Point2D[] vertices, Point2D position)
+        public Polygon(List<Point2D> vertices, Point2D position)
             : base(position)
         {
             Vertices = vertices;
@@ -59,10 +60,10 @@ namespace ExerciseSolution
         {
             float area = 0;
             // Go through all vertices and calculate the area.
-            for(int c = 0; c < Vertices.Length; c++)
+            for(int c = 0; c < Vertices.Count; c++)
             {
                 // Add all point pairs.
-                if(c < Vertices.Length - 1)
+                if(c < Vertices.Count - 1)
                     area += (Vertices[c].X - Vertices[c + 1].X) * (Vertices[c].Y + Vertices[c + 1].Y);
                 // Don't forget the last pair (last and first point).
                 else
@@ -78,27 +79,47 @@ namespace ExerciseSolution
         /// <returns>the created polygon</returns>
         public static Polygon CreatePolygon()
         {
-            // Read the number of vertices of the polygon.
-            Console.WriteLine("How many vertices:");
-            string vertexCountString = Console.ReadLine();
-            int vertexCount = int.Parse(vertexCountString);
-
-            // Only continue if there are more than 2 vertices.
-            while(vertexCount < 3)
+            int vertexCount = 0;
+            // Only continue if the right input was taken.
+            bool inputFinished = false;
+            while(!inputFinished)
             {
-                Console.WriteLine("There are not enough vertex. Please enter a new number:");
-                vertexCountString = Console.ReadLine();
-                vertexCount = int.Parse(vertexCountString);
+                // Read the number of vertices of the polygon.
+                Console.WriteLine("How many vertices:");
+                string vertexCountString = Console.ReadLine();
+                // Try if the parsing works.
+                try
+                {
+                    vertexCount = int.Parse(vertexCountString);
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Your input wasn't a number.");
+                    continue;
+                }
+                // Look if the count is to low.
+                if(vertexCount < 3)
+                    Console.WriteLine("The vertex count is too low (need to be greater than 2).");
+                else
+                    inputFinished = true;
             }
 
             // The arrays of the points.
-            Point2D[] vertices = new Point2D[vertexCount];
-
+            List<Point2D> vertices = new List<Point2D>();
             Console.WriteLine("Your vertex input:");
 
             for(int c = 0; c < vertexCount; c++)
-                vertices[c] = Point2D.CreatePoint(Console.ReadLine());
-
+            {
+                Point2D newPoint = Point2D.CreatePoint(Console.ReadLine());
+                // If the vertex input wasn't correct, the user need to make a new input.
+                if(newPoint == null)
+                {
+                    Console.WriteLine("Your input wasn't correct. Please re-enter:");
+                    c--;
+                }
+                else
+                    vertices.Add(newPoint);
+            }
             return new Polygon(vertices, new Point2D());
         }
     }

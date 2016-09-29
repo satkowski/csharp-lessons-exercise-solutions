@@ -35,7 +35,13 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 1. [A07 - Lists for Shapes](lesson_06/A07_lists_for_shapes/ExerciseSolution/)
 2. [B06 - Collections for Media](lesson_06/B06_collections_for_media/ExerciseSolution/)
 
-### Lesson 7
+### Lesson 7:
 1. [A08 - Static for Shapes](lesson_07/A08_static_for_shapes/ExerciseSolution/)
-2. [B07 - Advanced example](lesson_07/B07_advanced_example/ExerciseSolution/)
-3. [B08 - Fee calculation with DateTime](lesson_07/B08_fee_calculation/ExerciseSolution/)
+3. [B07 - Fee calculation with DateTime](lesson_07/B07_fee_calculation/ExerciseSolution/)
+2. [B08 - Advanced example](lesson_07/B08_advanced_example/ExerciseSolution/)
+
+### Lesson 8:
+
+### Lesson 9:
+
+### Lesson 10:

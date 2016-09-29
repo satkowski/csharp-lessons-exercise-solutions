@@ -49,17 +49,30 @@ namespace ExerciseSolution
         /// <returns>the created circle</returns>
         public static Circle CreateCircle()
         {
-            Console.WriteLine("What is the radius of the circle:");
-            string circleRadius = Console.ReadLine();
-            int radius = int.Parse(circleRadius);
-
-            while(radius <= 0)
+            int radius = 0;
+            // Only continue if the right input was taken.
+            bool inputFinished = false;
+            while(!inputFinished)
             {
-                Console.WriteLine("The radius isn't allowed to be less or equal 0. Please enter a new number:");
-                circleRadius = Console.ReadLine();
-                radius = int.Parse(circleRadius);
+                // Read the radius.
+                Console.WriteLine("What is the radius of the circle:");
+                string circleRadius = Console.ReadLine();
+                // Try if the parsing works.
+                try
+                {
+                    radius = int.Parse(circleRadius);
+                }
+                catch(Exception)
+                {
+                    Console.WriteLine("Your input wasn't a number.");
+                    continue;
+                }
+                // Look if the radius is correct.
+                if(radius <= 0)
+                    Console.WriteLine("The radius isn't allowed to be less or equal 0.");
+                else
+                    inputFinished = true;
             }
-
             return new Circle(radius, new Point2D());
         }
     }

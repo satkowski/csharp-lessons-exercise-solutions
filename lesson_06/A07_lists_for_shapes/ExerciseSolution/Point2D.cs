@@ -49,28 +49,5 @@ namespace ExerciseSolution
                                         (this.Y - point.Y) * (this.Y - point.Y));
             return distance;
         }
-
-        /// <summary>
-        /// Creates a new Point2D object with a string.
-        /// </summary>
-        /// <param name="pointString">a string that represent the coordinates. Looks like "x-y".</param>
-        /// <returns>the created Point2D</returns>
-        public static Point2D CreatePoint(string pointString)
-        {
-            char[] splitChar = { ':', '-' };
-            string[] coordinateValues = pointString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-
-            Point2D newPoint;
-            try
-            {
-                newPoint = new Point2D(int.Parse(coordinateValues[0]), int.Parse(coordinateValues[1]));
-            }
-            catch(Exception e)
-            {
-                newPoint = null;
-            }
-
-            return newPoint;
-        }
     }
 }

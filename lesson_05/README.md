@@ -6,9 +6,9 @@
 Takes the solutions of the fourth exercise and extend it with a Shape class.
 
 ### 2. (B04) Media class and derivation
-[Source](./B04_media/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B04_media.html)
+[Source](./B04_media/ExerciseSolution/) | [Tests](./B04_media/Tests/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B04_media.html)
 
-Takes the solutions of the third exercise and extend it with a Media class.
+Takes the solutions of the fourth exercise and extend it with a Media class.
 
 ### 3. (X03) Debugging test 3
 [Source](./X03_debugging_test_3/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X03_debugging_test_3.html)

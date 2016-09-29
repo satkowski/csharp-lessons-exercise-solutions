@@ -59,7 +59,18 @@ namespace ExerciseSolution
         {
             char[] splitChar = { ':', '-' };
             string[] coordinateValues = pointString.Split(splitChar, StringSplitOptions.RemoveEmptyEntries);
-            return new Point2D(int.Parse(coordinateValues[0]), int.Parse(coordinateValues[1]));
+
+            Point2D newPoint;
+            try
+            {
+                newPoint = new Point2D(int.Parse(coordinateValues[0]), int.Parse(coordinateValues[1]));
+            }
+            catch(Exception e)
+            {
+                newPoint = null;
+            }
+
+            return newPoint;
         }
     }
 }
