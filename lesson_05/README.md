@@ -10,7 +10,12 @@ Takes the solutions of the fourth exercise and extend it with a Shape class.
 
 Takes the solutions of the fourth exercise and extend it with a Media class.
 
-### 3. (X03) Debugging test 3
+### 3. (A06) Exception for shapes
+[Source](./A06_exception_for_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A06_exception_for_shapes.html)
+
+Take the solutions of the sixth exercise and add some exception handling.
+
+### 4. (X03) Debugging test 3
 [Source](./X03_debugging_test_3/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X03_debugging_test_3.html)
 
 Use the debugger and find the bugs!

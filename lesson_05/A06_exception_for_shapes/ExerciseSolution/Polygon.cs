@@ -71,55 +71,5 @@ namespace ExerciseSolution
             // Take the absolute half value.
             return Math.Abs(area / 2);
         }
-
-        /// <summary>
-        /// Creates a new polygon with a user input algrotihm.
-        /// </summary>
-        /// <returns>the created polygon</returns>
-        public static Polygon CreatePolygon()
-        {
-            int vertexCount = 0;
-            // Only continue if the right input was taken.
-            bool inputFinished = false;
-            while(!inputFinished)
-            {
-                // Read the number of vertices of the polygon.
-                Console.WriteLine("How many vertices:");
-                string vertexCountString = Console.ReadLine();
-                // Try if the parsing works.
-                try
-                {
-                    vertexCount = int.Parse(vertexCountString);
-                }
-                catch(Exception)
-                {
-                    Console.WriteLine("Your input wasn't a number.");
-                    continue;
-                }
-                // Look if the count is to low.
-                if(vertexCount < 3)
-                    Console.WriteLine("The vertex count is too low (need to be greater than 2).");
-                else
-                    inputFinished = true;
-            }
-
-            // The arrays of the points.
-            Point2D[] vertices = new Point2D[vertexCount];
-            Console.WriteLine("Your vertex input:");
-
-            for(int c = 0; c < vertexCount; c++)
-            {
-                Point2D newPoint = Point2D.CreatePoint(Console.ReadLine());
-                // If the vertex input wasn't correct, the user need to make a new input.
-                if(newPoint == null)
-                {
-                    Console.WriteLine("Your input wasn't correct. Please re-enter:");
-                    c--;
-                }
-                else
-                    vertices[c] = newPoint;
-            }
-            return new Polygon(vertices, new Point2D());
-        }
     }
 }

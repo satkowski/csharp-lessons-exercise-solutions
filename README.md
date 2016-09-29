@@ -25,20 +25,21 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 2. [X02 - Debugging test 2](lesson_04/X02_debugging_test_2/ExerciseSolution/)
 
 ### Lesson 5:
-1. [A05 - Abstract Shape class and derivations](lesson_05/A05_abstract_shapes/ExerciseSolution/)
-2. [B04 - Abstract Media class and derivation](lesson_05/B04_abstract_media/ExerciseSolution/)
-2. [X03 - Debugging test 2](lesson_05/X03_debugging_test_3/ExerciseSolution/)
+1. [A05 - Shape class and derivations](lesson_05/A05_shapes/ExerciseSolution/)
+2. [B04 - Media class and derivation](lesson_05/B04_media/ExerciseSolution/)
+3. [A06 - Exception for shapes](lesson_05/A06_exception_for_shapes/ExerciseSolution/)
+4. [X03 - Debugging test 3](lesson_05/X03_debugging_test_3/ExerciseSolution/)
 
 ### Lesson 6:
-1. [A06 - Abstract for Shape](lesson_06/A06_abstract_for_shape/ExerciseSolution/)
+1. [A07 - Abstract for Shape](lesson_06/A07_abstract_for_shape/ExerciseSolution/)
 2. [B05 - Abstract for Media](lesson_06/B05_abstract_for_media/ExerciseSolution/)
-1. [A07 - Lists for Shapes](lesson_06/A07_lists_for_shapes/ExerciseSolution/)
-2. [B06 - Collections for Media](lesson_06/B06_collections_for_media/ExerciseSolution/)
+3. [A08 - Lists for Shapes](lesson_06/A08_lists_for_shapes/ExerciseSolution/)
+4. [B06 - Collections for Media](lesson_06/B06_collections_for_media/ExerciseSolution/)
 
 ### Lesson 7:
-1. [A08 - Static for Shapes](lesson_07/A08_static_for_shapes/ExerciseSolution/)
-3. [B07 - Fee calculation with DateTime](lesson_07/B07_fee_calculation/ExerciseSolution/)
-2. [B08 - Advanced example](lesson_07/B08_advanced_example/ExerciseSolution/)
+1. [A09 - Static for Shapes](lesson_07/A09_static_for_shapes/ExerciseSolution/)
+2. [B07 - Fee calculation with DateTime](lesson_07/B07_fee_calculation/ExerciseSolution/)
+3. [B08 - Advanced example](lesson_07/B08_advanced_example/ExerciseSolution/)
 
 ### Lesson 8:
 

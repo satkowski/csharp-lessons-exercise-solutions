@@ -1,7 +1,7 @@
 # Lesson 7
 
-### 1. (A08) Static for Shape
-[Source](./A06_static_for_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A08_static_for_shapes.html)
+### 1. (A09) Static for Shape
+[Source](./A09_static_for_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A09_static_for_shapes.html)
 
 Takes the solutions of the sixth exercise and change some content and implement static methods.
 
