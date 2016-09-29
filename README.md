@@ -31,7 +31,7 @@ If an exercise is ~~stroke out~~ a solution is not available yet.
 4. [X03 - Debugging test 3](lesson_05/X03_debugging_test_3/ExerciseSolution/)
 
 ### Lesson 6:
-1. [A07 - Abstract for Shape](lesson_06/A07_abstract_for_shape/ExerciseSolution/)
+1. [A07 - Abstract for Shapes](lesson_06/A07_abstract_for_shapes/ExerciseSolution/)
 2. [B05 - Abstract for Media](lesson_06/B05_abstract_for_media/ExerciseSolution/)
 3. [A08 - Lists for Shapes](lesson_06/A08_lists_for_shapes/ExerciseSolution/)
 4. [B06 - Collections for Media](lesson_06/B06_collections_for_media/ExerciseSolution/)
