@@ -1,11 +1,16 @@
 # Lesson 5
 
-### 1. (A06) Static for Shape
-[Source](./A06_static_for_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A06_static_for_shapes.html)
+### 1. (A05) Shape class and derivation
+[Source](./A05_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A05_shapes.html)
 
-Takes the solutions of the fith exercise and change some content and implement static methods.
+Takes the solutions of the fourth exercise and extend it with a Shape class.
 
-### 2. (A07) Null for Shape
-[Source](./A07_exception_for_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A07_exception_for_shapes.html)
+### 2. (B04) Media class and derivation
+[Source](./B04_media/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B04_media.html)
 
-Take the solutions of the sixth exercise and add some exception handling.
+Takes the solutions of the third exercise and extend it with a Media class.
+
+### 3. (X03) Debugging test 3
+[Source](./X03_debugging_test_3/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X03_debugging_test_3.html)
+
+Use the debugger and find the bugs!

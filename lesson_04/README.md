@@ -1,16 +1,11 @@
 # Lesson 4
 
-### 1. (A05) Abstract Shape class and derivation
-[Source](./A05_abstract_shapes/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/A05_abstract_shapes.html)
+### 1. (B03) A User for the Library
+[Source](./B03_use/ExerciseSolution/) | [Tests](./B03_user/Tests/)  | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B03_user.html)
 
-Takes the solutions of the fourth exercise and extend it with an abstract Shape class.
+Creates a few classes for the library complex.
 
-### 2. (B04) Abstract Media class and derivation
-[Source](./B04_abstract_media/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B04_abstract_media.html)
+### 2. (X02) Debugging test 2
+[Source](./X02_debugging_test_2/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X02_debugging_test_2.html)
 
-Takes the solutions of the third exercise and extend it with an abstract Media class.
-
-### 3. (B05) Fee calculation with DateTime
-[Source](./B05_fee_calculation/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B05_fee_calculation.html)
-
-Takes the solutions of the fourth exercise and extend it with a fee calculation.
+Use the debugger and find the bugs!
