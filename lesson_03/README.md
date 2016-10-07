@@ -14,3 +14,8 @@ Takes the solutions of the last exercises and pack them in classes.
 [Source](./B02_book_library/ExerciseSolution/) | [Tests](./B02_book_library/Tests/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/B02_book_library.html)
 
 Creates a few classes for the library complex.
+
+### 4. (X02) Debugging exercise 2
+[Source](./X02_debugging_test_2/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X02_debugging_test_2.html)
+
+Use the debugger and find the bugs!

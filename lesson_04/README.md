@@ -5,7 +5,7 @@
 
 Creates a few more classes for the library complex.
 
-### 2. (X02) Debugging test 2
-[Source](./X02_debugging_test_2/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X02_debugging_test_2.html)
+### 2. (X03) Debugging exercise 3
+[Source](./X03_debugging_exercise_3/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X03_debugging_exercise_3.html)
 
 Use the debugger and find the bugs!
