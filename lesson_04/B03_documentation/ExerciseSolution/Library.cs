@@ -4,17 +4,31 @@ namespace ExerciseSolution
 {
     public class Library
     {
+        /// <summary>
+        /// All books that this library manages.
+        /// </summary>
         private Book[] books;
+        /// <summary>
+        /// The number of that were already added to the stock of this library.
+        /// </summary>
         private int bookCount;
 
-        
+
+        /// <summary>
+        /// Constructor. Creates a library with max 100 users ans 500 books.
+        /// </summary>
         public Library()
         {
             bookCount = 0;
             books = new Book[500];
         }
 
-        
+
+        /// <summary>
+        /// Searches in the stock of this library for matching books.
+        /// </summary>
+        /// <param name="searchQuery">the search query.</param>
+        /// <returns>the array of all found books. Empty if no books was found.</returns>
         public Book[] Search(string searchQuery)
         {
             // Only search if the search query hast more than 2 characters.
@@ -38,7 +52,11 @@ namespace ExerciseSolution
 
             return outputBooks;
         }
-        
+
+        /// <summary>
+        /// Add a new book to the stock of the library.
+        /// </summary>
+        /// <param name="book"></param>
         public void AddNewBook(Book book)
         {
             books[bookCount] = book;

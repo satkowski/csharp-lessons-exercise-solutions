@@ -2,8 +2,14 @@
 
 namespace ExerciseSolution
 {
+    /// <summary>
+    /// Represent a polygon shape.
+    /// </summary>
     public class Polygon
     {
+        /// <summary>
+        /// The listing of all vertex that this polygon owns.
+        /// </summary>
         public Point2D[] Vertices
         {
             get { return vertices; }
@@ -14,27 +20,45 @@ namespace ExerciseSolution
             }
         }
         private Point2D[] vertices;
-        
+
+        /// <summary>
+        /// The count of the vertices.
+        /// </summary>
         public int VertexCount
         {
             get { return Vertices.Length; }
         }
-        
+
+        /// <summary>
+        /// The area of the polygon.
+        /// </summary>
         public float Area
         { get; private set; }
 
-        
+
+        /// <summary>
+        /// Constructor. Creates a polygon with the given number of vertices, but all of them are 0.
+        /// </summary>
+        /// <param name="vertexCount">the number of vertices</param>
         public Polygon(int vertexCount)
         {
             vertices = new Point2D[vertexCount];
         }
-        
+
+        /// <summary>
+        /// Constructor. Creates a polygon with the given array of vertices.
+        /// </summary>
+        /// <param name="vertices">the vertices</param>
         public Polygon(Point2D[] vertices)
         {
             Vertices = vertices;
         }
 
-        
+
+        /// <summary>
+        /// Calculates the area of this polygon.
+        /// </summary>
+        /// <returns>the area</returns>
         private float calculateArea()
         {
             float area = 0;
