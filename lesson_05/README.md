@@ -16,6 +16,6 @@ Takes the solutions of the fourth exercise and extend it with a Media class.
 Take the solutions of the sixth exercise and add some exception handling.
 
 ### 4. (X04) Debugging exercise 4
-[Source](./X04_debugging_exercise_4/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X04_debugging_exercise_4.html)
+[Exercise](./X04_debugging_exercise_4/Exercise/)[Solution](./X04_debugging_exercise_4/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X04_debugging_exercise_4.html)
 
 Use the debugger and find the bugs!

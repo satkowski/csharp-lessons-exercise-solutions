@@ -11,6 +11,6 @@ Calculate the area of a polygon with hard coded values.
 Search for a (book) title with a user input.
 
 ### 3. (X01) Debugging exercise 1
-[Source](./X01_debugging_exercise_1/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X01_debugging_exercise_1.html)
+[Exercise](./X01_debugging_exercise_1/Exercise/)[Solution](./X01_debugging_exercise_1/ExerciseSolution/) | [Link to exercise](http://fsr.github.io/csharp-lessons/exercises/X01_debugging_exercise_1.html)
 
 Use the debugger and find the bugs!

@@ -1,24 +1,24 @@
 ﻿using System;
 
-namespace ExerciseSolution
+namespace Exercise
 {
     class Program
     {
         static void Main(string[] args)
         {
-            bool numberNotFound = true;
+            bool numberNotFound = false;
             int number = 2520;
 
             while(numberNotFound)
             {
-                number += 2;
-                for(int devider = 2; devider <= 20; devider++)
+                for(int devider = 0; devider < 20; devider++)
                 {
                     if(number % devider != 0)
                         break;
-                    if(devider >= 20)
-                        numberNotFound = false;
+                    else
+                        numberNotFound = true;
                 }
+                number += 2;
             }
 
             // 232792560 ist das Ergebnis
